@@ -1,50 +1,98 @@
-# Welcome to your Expo app 👋
+# 🏠 Real Estate Listings App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern cross-platform **Real Estate Listings Mobile Application** built using **React Native** and **Expo** for both **iOS** and **Android**.
 
-## Get started
+The app allows users to browse, search, and explore property listings with a clean UI, smooth navigation, and real-time backend integration.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+# 🚀 Features
 
-2. Start the app
+- 🔐 User Authentication
+- 🏘 Browse Property Listings
+- 🔎 Search & Filter Properties
+- ❤️ Save Favorite Properties
+- 📱 Cross Platform Support (iOS & Android)
+- ⚡ Fast & Responsive UI
+- ☁️ Supabase Backend Integration
+- 🗂 Global State Management with Zustand
+- 🎨 Tailwind Styling with NativeWind
+- 🧩 Reusable Component Architecture
+- 🔄 Real-time Database Support
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+# 🛠 Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Frontend
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- React Native
+- Expo
+- TypeScript
+- NativeWind
+- Tailwind CSS
 
-## Get a fresh project
+## State Management
 
-When you're ready, run:
+- Zustand
 
-```bash
-npm run reset-project
-```
+## Backend & Database
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Supabase
+- PostgreSQL
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+# 🧠 State Management
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+The application uses **Zustand** for lightweight and scalable global state management.
 
-## Join the community
+Used for:
 
-Join our community of developers creating universal apps.
+- Authentication state
+- Saved properties
+- Search filters
+- App preferences
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+# ☁️ Supabase Integration
+
+Supabase is used for:
+
+- Authentication
+- PostgreSQL Database
+- Real-time Updates
+- Backend APIs
+- File Storage
+
+---
+
+# 🎨 Styling
+
+The UI is styled using:
+
+- Tailwind CSS
+- NativeWind
+
+Benefits:
+
+- Utility-first styling
+- Faster development
+- Consistent UI design
+- Responsive layouts
+
+---
+
+# 📱 Supported Platforms
+
+- Android
+- iOS
+
+---
+
+# 👨‍💻 Author
+
+Developed by Dilip
+
+---
