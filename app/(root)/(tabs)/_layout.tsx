@@ -11,11 +11,12 @@ function AndroidTabs() {
     <Tabs
       screenOptions={{
         tabBarStyle: {
-          backgroundColor: "#0F172A",
+          backgroundColor: "white",
           borderTopWidth: 0,
           height: 80,
+          paddingTop: 10,
         },
-        tabBarActiveTintColor: "#FFFFFF",
+        // tabBarActiveTintColor: "#000",
         tabBarInactiveTintColor: "#94A3B8",
         headerShown: false,
       }}>
@@ -29,7 +30,17 @@ function AndroidTabs() {
         }}
       />
 
-      {/* {isAdmin && (
+      <Tabs.Screen
+        name="search"
+        options={{
+          title: "Search",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="search" color={color} size={size} />
+          ),
+        }}
+      />
+
+      {isAdmin && (
         <Tabs.Screen
           name="create"
           options={{
@@ -40,17 +51,6 @@ function AndroidTabs() {
           }}
         />
       )}
-        */}
-
-      <Tabs.Screen
-        name="search"
-        options={{
-          title: "Search",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="search" color={color} size={size} />
-          ),
-        }}
-      />
 
       <Tabs.Screen
         name="saved"
