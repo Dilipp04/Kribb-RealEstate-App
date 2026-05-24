@@ -1,12 +1,9 @@
-import { useUserStore } from "@/store/useStore";
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { Icon, Label, NativeTabs } from "expo-router/unstable-native-tabs";
 import { Platform } from "react-native";
 
 function AndroidTabs() {
-  const isAdmin = useUserStore((state) => state.isAdmin);
-
   return (
     <Tabs
       screenOptions={{
@@ -40,18 +37,6 @@ function AndroidTabs() {
         }}
       />
 
-      {isAdmin && (
-        <Tabs.Screen
-          name="create"
-          options={{
-            title: "Add Property",
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons name="add-circle-outline" color={color} size={size} />
-            ),
-          }}
-        />
-      )}
-
       <Tabs.Screen
         name="saved"
         options={{
@@ -76,8 +61,6 @@ function AndroidTabs() {
 }
 
 function IOSTabs() {
-  const isAdmin = useUserStore((state) => state.isAdmin);
-
   return (
     <NativeTabs>
       <NativeTabs.Trigger name="index">
@@ -89,13 +72,6 @@ function IOSTabs() {
         <Icon sf="magnifyingglass" />
         <Label>Search</Label>
       </NativeTabs.Trigger>
-
-      {isAdmin && (
-        <NativeTabs.Trigger name="create">
-          <Icon sf="plus.circle.fill" />
-          <Label>Add Property</Label>
-        </NativeTabs.Trigger>
-      )}
 
       <NativeTabs.Trigger name="saved">
         <Icon sf="heart.fill" />

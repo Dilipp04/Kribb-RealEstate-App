@@ -1,3 +1,4 @@
+import { useUserStore } from "@/store/useStore";
 import { useAuth, useUser } from "@clerk/expo";
 import { Ionicons } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
@@ -19,6 +20,8 @@ export default function profile() {
   const router = useRouter();
   const { user, isLoaded } = useUser();
   const [isUpdating, setIsUpdating] = useState(false);
+
+  const isAdmin = useUserStore((state) => state.isAdmin);
 
   const onLogoutPress = async () => {
     try {
@@ -128,6 +131,13 @@ export default function profile() {
           label="Help & Support"
           onPress={() => Linking.openURL("mailto:")}
         />
+        {isAdmin && (
+          <MenuItem
+            icon="add-circle-outline"
+            label="Create Property"
+            onPress={() => router.push("/(root)/create")}
+          />
+        )}
       </View>
 
       <View className="px-6 mt-auto mb-4">
