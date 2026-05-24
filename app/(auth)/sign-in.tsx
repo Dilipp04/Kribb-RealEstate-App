@@ -165,7 +165,7 @@ export default function SignIn() {
           {isLoading ? (
             <ActivityIndicator color="white" />
           ) : (
-            <Text className="text-white font-bold text-base">Sign Up</Text>
+            <Text className="text-white font-bold text-base">Sign In</Text>
           )}
         </TouchableOpacity>
 
