@@ -4,7 +4,7 @@
     "slug": "realEstate",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/kribb.png",
+    "icon": "./assets/images/icon.png",
     "scheme": "realestate",
     "userInterfaceStyle": "automatic",
     "ios": {
@@ -12,6 +12,7 @@
     },
     "android": {
       "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#E6F4FE"
       },
       "predictiveBackGestureEnabled": false,
