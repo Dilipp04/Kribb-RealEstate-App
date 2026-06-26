@@ -12,7 +12,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/icon.png",
+        "foregroundImage": "./assets/images/kribb.png",
         "backgroundColor": "#E6F4FE"
       },
       "predictiveBackGestureEnabled": false,
@@ -38,6 +38,8 @@
       ],
       "expo-secure-store"
     ],
+
+    "jsEngine": "jsc",
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
